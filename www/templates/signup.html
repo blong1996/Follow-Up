@@ -1,0 +1,44 @@
+<ion-nav-bar class="bar-assertive nav-title-slide-ios7 bar-asseritve">
+  <ion-nav-back-button class="button-icon icon ion-chevron-left">
+    Back
+  </ion-nav-back-button>
+  <form ua-signup>
+
+    <ion-view title="Sign Up">
+      <ion-content>
+        <div class="padding" style="text-align: left; padding-top: 10%;">
+          <div class="list list-inset">
+            <label class="item item-input">
+              <span class="input-label">First Name</span>
+              <input  id="fname" type="text" name="first_name" value="{{  firstname }}">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Last Name</span>
+              <input id="lname" type="text" name="last_name" value="{{  lastname }}">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Email</span>
+              <input type="text" name="login" ua-is-email>
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Password</span>
+              <input type="password" name="password">
+            </label>
+          </div>
+
+
+          <div class="padding">
+            <button class="button button-block button-assertive ng-cl" >Create My Account</button>
+            <span ng-show="!loading"></span>
+            <i ng-show="loading" class="ion-loading-b"></i>
+          </div>
+        </div>
+      </ion-content>
+    </ion-view>
+    <div class="bar bar-footer bar-assertive" ng-show="error">
+      <div class="title">{{ error.message }}</div>
+    </div>
+  </form>
+
+</ion-nav-bar>
+

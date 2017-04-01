@@ -1,1 +1,17 @@
 /* Empty. Add your own CSS if you like */
+
+.start-background {
+  background-image: url("../img/homescreenbackground.jpg");
+  background-size: cover;
+  background-color: #ccccc0;
+  background-repeat: no-repeat;
+
+}
+
+.login-background {
+  background-image: url("../img/loginbackground.jpg");
+  background-size: cover;
+  background-color: #384729;
+  background-repeat: no-repeat;
+
+}
